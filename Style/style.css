@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.cabecera {
+    padding-top: 1px; /* espacio arriba */
+    padding-bottom: 1px; /* espacio abajo */
+    background-color: rgb(255, 166, 0); /* agrego color al fondo de la cabecera */
+    top: 0; /* inicio posicion arriba del navegador */
+    left: 0; /* inicio posicion a la izquierda del navegador */
+    width: 100%; /* ancho de la cabecera */
+    position: fixed; /* cabecera fija */
+    z-index: 10; /* Más alto que el video */
+}
+
+.cabecera .link-logo {
+    vertical-align: middle; /* colocar el logo al centro de la cabecera */
+}
+
+.cabecera .link-logo .logopagina {
+    width: 118px; /*ancho del logo*/
+    height: auto; /*alto del logo*/
+    padding-left: 30px;
+}
+
+.cabecera .menu {
+    display: inline-block; /* alinear todo el contenido de la cabecera al centro */
+    margin-left: 35%;
+}
+
+.cabecera .menu a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.5s ease;
+    margin-left: 8px; /* espacio entre cada palabra desde la izquierda */
+    margin-right: 8px; /* espacio entre cada palabra desde la derecha */
+    color: white; /* color fuente */
+    font-size: 20px; /* tamaño fuente */
+    font-weight: bold; /* fuente en negrita */
+    text-decoration: none; /* quitar linea debajo de los links */
+    letter-spacing: 2px; /* espacio entre cada letra de la palabra */
+    word-spacing: 5px; /* espacio entre cada palabra */
+    padding: 12px 7px; /* espacio entre el texto y el borde del menu */
+    border-radius: 8px; /* esquinas redondeadas */
+}
+
+.cabecera .menu a:hover {
+    background-color: black; /* color al fondo al pasar el mouse */
+    transition: 0.5s; /*  */
+    padding-left: 20px;
+}
+
+.btnlogin {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    margin-left: 140px;
+    padding: 12px 12px;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.btnlogin:hover {
+    background-color: white;
+    color: black;
+    padding: 18px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.titulocarta {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.imgcarta {
+    width: 88%;
+}
+
+.seccioncarta {
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2%;
+    margin-top: -1%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.seccioncarta a {
+    color:rgb(255, 166, 0);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.tituloservicios {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ecard-content {
+    color: black;
+    padding: 1rem;
+}
+
+.ecard-container {
+    display: flex; /* alinear contenido al centro */
+    gap: 30px; /* espacio entre cada carta */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ecard {
+    background-color: white;
+    border-radius: 2rem; /* esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(black, 0, 0, 0, 0.1);
+    width: 510px;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent; /* <- Agrega un borde invisible por defecto */
+}
+
+.ecard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ee6f38;
+    border-color: #ee6f38; /* <- Solo cambia el color del borde, no su tamaño */
+}
+
+.ecard img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ecard h2 {
+    margin: 0.5rem 0;
+    font-size: 1.85rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ecard p {
+    font-size: 1.25rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.ecard .btnpedir {
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 5%;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.ecard .btnpedir:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.videobanner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.videobanner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.frase-video {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    z-index: 5;
+    text-transform: uppercase;
+}   
