@@ -224,4 +224,13 @@ video {
     text-align: center;
     z-index: 5;
     text-transform: uppercase;
-}   
+}
+
+.footerpagina {
+    background-color:  rgb(255, 166, 0);
+}
+
+.logoenfooter {
+    width: 500px; /* Ancho de 200 píxeles */
+    height: 500px; /* Altura de 150 píxeles */
+}
